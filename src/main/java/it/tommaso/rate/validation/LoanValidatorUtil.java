@@ -27,7 +27,7 @@ public class LoanValidatorUtil {
 
         if (isLoanOutOfRequirements(loanAmount)) {
             throw new IllegalArgumentException(
-                    "The LoanDto amount must be requested in any £100 increment between £1000 and £15000 inclusive.");
+                    "The Loan amount must be requested in any £100 increment between £1000 and £15000 inclusive.");
         }
 
         return new LoanDto(marketFilePath, loanAmount);
